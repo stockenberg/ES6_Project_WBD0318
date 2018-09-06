@@ -4,3 +4,13 @@
 - Leon 😁
 - Marten ;)
 - Florian
+
+#Always Remember
+
+```
+if(youWant() === true) {
+    youCan();
+}else {
+youCant();
+}
+```
