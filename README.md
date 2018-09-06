@@ -1,5 +1,6 @@
-ES6_Project
+﻿ES6_Project
 
 
 - Leon 😁
 - Marten ;)
+- Florian
