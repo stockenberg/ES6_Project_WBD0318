@@ -1,5 +1,5 @@
 ES6_Project
 
 
-- Leon :)
+- Leon :D
 - Marten ;)
