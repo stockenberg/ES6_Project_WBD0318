@@ -1,6 +1,0 @@
-/**
- * Florian
- */
-class Http{
-    
-}
