@@ -1,0 +1,7 @@
+/**
+ * Marten
+ */
+
+class PageLoad{
+
+}

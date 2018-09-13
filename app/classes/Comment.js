@@ -1,7 +1,7 @@
 /**
  * Sarah
  */
-class {
+class Comment{
 
     addComment() {
 
