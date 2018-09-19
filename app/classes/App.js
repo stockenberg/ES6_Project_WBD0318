@@ -2,24 +2,22 @@
  * Marten
  */
 
- class App{
+import Post from './Post.js';
+
+class App {
 
 
     init() {
-       this.loadPosts();
-       let obj = {name: 'value'};
+        Post.loadPosts();
+        
+        let obj = {
+            name: 'value'
+        };
 
-       axios.post('http://mstockenberg.de/blogapi/?case=posts&action=insert', "data=" + JSON.stringify(obj))
-       .then(res => {
-           console.log(res);
-       })
-    }
-
-    loadPosts() {
-        axios.get('http://mstockenberg.de/blogapi/?case=posts')
-        .then(res => {
-            console.log(res);
-        })
+        axios.post('http://mstockenberg.de/blogapi/?case=posts&action=insert', "data=" + JSON.stringify(obj))
+            .then(res => {
+                console.log(res);
+            })
     }
 
 }
