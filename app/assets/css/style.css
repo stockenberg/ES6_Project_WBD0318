@@ -13,3 +13,58 @@ body {
         padding-top: 56px;
     }
 }
+
+
+/** Notification CSS **/
+
+.notification-container {
+    width:350px;
+    height: 80px;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+    border-radius: 100px;
+    padding: 3px;
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ffffff;
+}
+
+.notification-title {
+  font-weight:bold;
+  margin-bottom:0;
+}
+
+.notification-text {
+  margin-top:15px;
+}
+
+.notification-description {
+  margin-top:0;
+}
+.animation {
+    display: block;
+  float:left;
+    width: 32px;
+    height: 32px;
+    background: #0095f7;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(0,149,247,.4);
+    -webkit-animation: n_pulse 1.5s infinite;
+    animation: n_pulse 1.5s infinite;
+    border-radius: 50%;
+    margin: 22px;
+}
+
+
+
+@keyframes n_pulse {
+    0% {
+          box-shadow: 0 0 0 0 rgba(0,149,247,.4);
+      }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0,149,247,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,149,247,0);
+    }
+}
