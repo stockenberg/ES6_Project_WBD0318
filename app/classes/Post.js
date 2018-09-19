@@ -5,11 +5,13 @@ import Templates from './Templates.js';
 import Events from './Events.js';
 
 class Post{
-    create( ){
-		
+
+    create(){
+        
+        
+        
 	}
 
-    }
 
     static renderPosts(template) {
         let event = new Events();
