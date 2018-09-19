@@ -25,8 +25,13 @@ class Post{
     static loadPosts() {
         return axios.get('http://mstockenberg.de/blogapi/?case=posts')
         .then(res => {
-            let template = Templates.postTemplate(res.data[0]);
+            let template = "";
+
+            for(var i = 0; i < res.data.length; i++){
+                template = template + Templates.postTemplate(res.data[i]);
+            }
             this.renderPosts(template);
+
         })
     }
 
