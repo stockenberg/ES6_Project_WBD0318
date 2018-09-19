@@ -6,6 +6,8 @@ import Events from './Events.js';
 
 class Post{
     create( ){
+		
+	}
 
     }
 

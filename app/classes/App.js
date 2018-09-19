@@ -1,6 +1,3 @@
-/**
- * Marten
- */
 
 import Post from './Post.js';
 
