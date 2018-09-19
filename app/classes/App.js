@@ -9,15 +9,17 @@ class App {
 
     init() {
         Post.loadPosts();
-        
+        /*
         let obj = {
-            name: 'value'
+            title: 'value',
+            content: 'test'
         };
 
         axios.post('http://mstockenberg.de/blogapi/?case=posts&action=insert', "data=" + JSON.stringify(obj))
             .then(res => {
                 console.log(res);
             })
+          */  
     }
 
 }

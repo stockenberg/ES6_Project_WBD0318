@@ -22,6 +22,9 @@ class Post{
         
     }
 
+    /**
+     * Loads posts from URL and Builds HTML templates
+     */
     static loadPosts() {
         return axios.get('http://mstockenberg.de/blogapi/?case=posts')
         .then(res => {
