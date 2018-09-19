@@ -13,3 +13,22 @@ body {
         padding-top: 56px;
     }
 }
+
+/* Create New Blogost */
+
+.text-label {
+	display: block;
+	font-weight: 600;
+}
+
+.formbox {
+	padding: 0.5rem;
+}
+
+#formcontent {
+	height: 10rem;
+}
+
+input[type=text], formbox {
+	width: 100%;
+}

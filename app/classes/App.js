@@ -1,17 +1,19 @@
-/**
- * Marten
- */
+
 
  class App{
 
 
     init() {
        this.loadPosts();
-       let obj = {name: 'value'};
+       let obj = {
+		   title: 'Das ist der vierte Eintrag',
+		   content: 'test',
+	   };
 
        axios.post('http://mstockenberg.de/blogapi/?case=posts&action=insert', "data=" + JSON.stringify(obj))
        .then(res => {
            console.log(res);
+		   
        })
     }
 
