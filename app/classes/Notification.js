@@ -5,7 +5,9 @@
 import Events from './Events.js';
 
 class Notification{
-
+    /**
+     * TODO : Multiple notifications stack
+     */
 
     static success(title, description) {
         Events.id("notification-container").style.display = "block";
