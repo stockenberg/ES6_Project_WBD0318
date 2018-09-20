@@ -24,13 +24,19 @@ class Post{
         event.class('posts')[0].innerHTML = template;
 >>>>>>> 4c1cdc5b4dd51f733cfd0b38eca9d9f7a46ed0a0
     }
-
+/**
+*Sarah
+*/
     deletePost() {
-
+     axios.get('http://mstockenberg.de/blogapi/?case=posts&action=delete&id=')
+      .then (res => {
+        console.log("YEAH");
+        this.loadPosts();
+      })
     }
 
     updatePost() {
-        
+
     }
 
     /**
@@ -49,7 +55,7 @@ class Post{
         })
     }
 
-   
+
 }
 
 export default Post;
