@@ -18,9 +18,11 @@ class App {
             })
           */  
 
-        document.getElementById('createPosts').onsubmit = function () {
-            Post.create()
-        }
+         $("#createPosts").submit(function(event) {
+             Post.create();
+         });
+             
+       
     }
 
 }

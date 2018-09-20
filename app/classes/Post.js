@@ -7,8 +7,7 @@ import Events from './Events.js';
 class Post{
 	
     static create(){
-		
-		$("#createPosts").submit(function(event) {
+        console.log('test-post');
 			
 			var title = $('#formtitle').val();
 			if((title === "")||(title === null)){
@@ -28,8 +27,8 @@ class Post{
 			var content = $('#formcontent').val();
 			if((content === "")||(content === null)){
 			  alert('Please enter Content');
-			}
-		});       
+            }
+            
 	}
 
     static renderPosts(template) {
