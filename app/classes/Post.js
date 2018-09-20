@@ -5,13 +5,31 @@ import Templates from './Templates.js';
 import Events from './Events.js';
 
 class Post{
-
+	
     static create(){
-        
-        // 1. Validate form data
-
-        // if data is clean -> axios.get(url).then(res => {})
-        
+		
+		$("#createPosts").submit(function(event) {
+			
+			var title = $('#formtitle').val();
+			if((title === "")||(title === null)){
+			  alert('Please enter Post Title');
+			}
+			
+			var tags = $('#formtags').val();
+			if((tags === "")||(tags === null)){
+			  alert('Please enter Post Tags');
+			}
+			
+			var author = $('#formauthor').val();
+			if((author === "")||(author === null)){
+			  alert('Please enter an Author');
+			}
+			
+			var content = $('#formcontent').val();
+			if((content === "")||(content === null)){
+			  alert('Please enter Content');
+			}
+		});       
 	}
 
     static renderPosts(template) {
