@@ -15,10 +15,9 @@ class Post{
 	}
 
     static renderPosts(template) {
-        let event = new Events();
-        event.class('posts')[0].innerHTML = null;
+        Events.class('posts')[0].innerHTML = null;
 
-        event.class('posts')[0].innerHTML = template;
+        Events.class('posts')[0].innerHTML = template;
     }
 /**
 *Sarah

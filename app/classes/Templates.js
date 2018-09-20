@@ -16,6 +16,7 @@ class Templates{
            Posted on January 1, 2017 by
            <a href="#">Start Bootstrap</a>
        </div>
+       <a href="#" class="btn btn-primary">Delete</a>
    `
     }
 
