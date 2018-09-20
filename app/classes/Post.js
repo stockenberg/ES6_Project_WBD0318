@@ -24,11 +24,13 @@ class Post{
     /**
     *Sarah
     */
-    deletePost() {
-     axios.get('http://mstockenberg.de/blogapi/?case=posts&action=delete&id=')
-      .then (res => {
-        console.log("YEAH");
+    static deletePost(id) {
+     axios.get('http://mstockenberg.de/blogapi/?case=posts&action=delete&id=' + id)
+      .then (result => {
+
+        Notification.success("Erfolg");
         this.loadPosts();
+        
       })
     }
 

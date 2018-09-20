@@ -11,6 +11,16 @@ class App {
     init() {
         Post.loadPosts();
         this.handlePostSubmit();
+
+        /**
+         * How does this fckn work with native js ?!
+         */
+        $(document).on('click', '.delete', function (e) {
+            e.preventDefault();
+
+            Post.deletePost(e.target.dataset.id);
+            console.log('test');
+        })
     }
 
     /**

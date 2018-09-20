@@ -8,7 +8,7 @@ class Templates{
     static postTemplate(data) {
        return `<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
        <div class="card-body">
-           <h2 class="card-title">${data.title}</h2>
+           <h2 class="card-title">${data.title} - ${data.id}</h2>
            <p class="card-text">${data.content}</p>
            <a href="#" class="btn btn-primary">Read More →</a>
        </div>
@@ -16,7 +16,7 @@ class Templates{
            Posted on January 1, 2017 by
            <a href="#">Start Bootstrap</a>
        </div>
-       <a href="#" class="btn btn-primary">Delete</a>
+       <a href="#" class="btn btn-primary delete" data-id="${data.id}">Delete</a>
    `
     }
 
