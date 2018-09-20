@@ -8,6 +8,8 @@ class App {
 
     init() {
         Post.loadPosts();
+        Notification.error("Hallo", "Welt");
+        
         /*
         let obj = {
             title: 'value',
