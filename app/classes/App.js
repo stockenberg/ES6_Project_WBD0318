@@ -19,6 +19,10 @@ class App {
                 console.log(res);
             })
           */  
+
+        document.getElementById('createPosts').onsubmit = function () {
+            Post.create()
+        }
     }
 
 }
