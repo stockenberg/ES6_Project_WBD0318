@@ -1,0 +1,160 @@
+/* CSS RESET */
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'Open Sans';
+line-height: 1.5;
+box-sizing: border-box;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+/* CLEARFIX */
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/* >>>>> GENERAL STYLES >>>>> */
+
+html,
+body {
+font-size: 16px;
+}
+
+h1 {
+margin: 20px 10px;
+}
+
+/* <<<<< GENERAL STYLES <<<<< */
+
+
+/* >>>>> ELEMENT STYLES >>>>> */
+
+/* search input */
+
+.search {
+margin: 0 auto 1.5rem;
+}
+
+.search form {
+position: relative;
+width: calc(100% - 2rem);
+margin-left: 1rem;
+}
+
+.search form input[type="text"] {
+position: relative;
+z-index: 5;
+display: block;
+width: 100%;
+padding: .75rem;
+border-radius: 4px;
+border: none;
+border: 1px solid #A3B1BF;
+color: #3A4A59;
+line-height: 1.5;
+font-size: 100%;
+-webkit-appearance: none;
+outline: none;
+transition: all .2s ease;
+}
+
+.search form input[type="text"]:focus {
+border-color: #3A4A59;
+box-shadow: 0px 4px 16px rgba(58,74,89,0.2);
+}
+
+.search form input[type="submit"] {
+position: absolute;
+width: 1.5rem;
+height: 1.5rem;
+right: .75rem;
+top: calc(.75rem + 1px);
+background: url(../img/icon-search.svg) no-repeat center center;
+border: none;
+line-height: 0;
+cursor: pointer;
+transition: all .2s ease;
+z-index: 6;
+}
+
+.search form input[type="submit"]:hover {
+transform: scale(1.2);
+}
+
+/* search output */
+
+.search .searchConntent {
+position: absolute;
+top: auto;
+left: 1rem;
+width: calc(100% - 2rem);
+margin-top: 4px;
+padding: 10px;
+background: #fff;
+border: 1px solid #d9d9d9;
+border-radius: 4px;
+box-shadow: 0px 4px 16px rgba(58,74,89,0.2);
+transition: all .2s ease;
+z-index: 10;
+opacity: 0;
+}
+
+.search .searchConntent::before {
+position: absolute;
+top: -7px;
+left: 2rem;
+display: block;
+content: "";
+width: 14px;
+height: 14px;
+border-top: 1px solid #d9d9d9;
+border-right: 1px solid #d9d9d9;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+background: #fff;
+border-radius: 2px;
+z-index: 4;
+}
+
+.search .searchConntent span {
+font-size: 0.8rem;
+}
+
+.search .searchConntent li {
+margin: 10px 0;
+list-style-type: none;
+white-space: nowrap;
+overflow: hidden;
+width: 100%;
+text-overflow: ellipsis;
+}
+
+.search .searchConntent li  h3 {
+color: gray;
+font-weight: 700;
+}
+
+.search .searchConntent li  span {
+font-size: .8em;
+font-weight: 700;
+}
+
+.search .searchConntent li::after {
+display: block;
+content: "";
+width: 100%;
+margin-bottom: 15px;
+border-bottom: 1px solid gray;
+}
+
+/* <<<<< ELEMENT STYLES <<<<< */
