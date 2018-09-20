@@ -1,27 +1,22 @@
 
 import Post from './Post.js';
-import Notification from './Notification.js';
 
 
 class App {
 
-
+    /**
+     * Initialize the JavaScript logic
+     * register handlers
+     */
     init() {
         Post.loadPosts();
-        Notification.error("Hallo", "Welt");
-        
-        /*
-        let obj = {
-            title: 'value',
-            content: 'test'
-        };
+        this.handlePostSubmit();
+    }
 
-        axios.post('http://mstockenberg.de/blogapi/?case=posts&action=insert', "data=" + JSON.stringify(obj))
-            .then(res => {
-                console.log(res);
-            })
-          */  
-
+    /**
+     * Post Create - Submit Form Handler
+     */
+    handlePostSubmit(){
         document.getElementById('createPosts').onsubmit = function () {
             Post.create()
         }

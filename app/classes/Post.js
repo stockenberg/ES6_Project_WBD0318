@@ -3,6 +3,7 @@
  */
 import Templates from './Templates.js';
 import Events from './Events.js';
+import Notification from './Notification.js';
 
 class Post{
 
@@ -18,10 +19,11 @@ class Post{
         Events.class('posts')[0].innerHTML = null;
 
         Events.class('posts')[0].innerHTML = template;
+
     }
-/**
-*Sarah
-*/
+    /**
+    *Sarah
+    */
     deletePost() {
      axios.get('http://mstockenberg.de/blogapi/?case=posts&action=delete&id=')
       .then (res => {
@@ -46,6 +48,7 @@ class Post{
                 template = template + Templates.postTemplate(res.data[i]);
             }
             this.renderPosts(template);
+            Notification.success('Posts loaded', 'Posts wurden erfolgreich geladen');
 
         })
     }
