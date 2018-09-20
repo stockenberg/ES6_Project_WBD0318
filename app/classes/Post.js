@@ -6,17 +6,18 @@ import Events from './Events.js';
 
 class Post{
 
-    create(){
+    static create(){
         
-        
+        // 1. Validate form data
+
+        // if data is clean -> axios.get(url).then(res => {})
         
 	}
-
 
     static renderPosts(template) {
         let event = new Events();
         event.class('posts')[0].innerHTML = null;
-        
+
         event.class('posts')[0].innerHTML = template;
     }
 
