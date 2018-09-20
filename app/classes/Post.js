@@ -16,13 +16,10 @@ class Post{
 
     static renderPosts(template) {
         let event = new Events();
-<<<<<<< HEAD
-        Events.class('posts')[0].innerHTML = template;
-=======
+
         event.class('posts')[0].innerHTML = null;
 
         event.class('posts')[0].innerHTML = template;
->>>>>>> 4c1cdc5b4dd51f733cfd0b38eca9d9f7a46ed0a0
     }
 
     deletePost() {
