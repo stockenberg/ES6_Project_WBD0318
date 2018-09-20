@@ -17,7 +17,8 @@ body {
 
 /** Notification CSS **/
 
-.notification-container {
+#notification-container {
+    display:none;
     width:350px;
     height: 80px;
     box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
@@ -29,35 +30,32 @@ body {
     background: #ffffff;
 }
 
-.notification-title {
+#notification-title {
   font-weight:bold;
   margin-bottom:0;
 }
 
-.notification-text {
+#notification-text {
   margin-top:15px;
 }
 
-.notification-description {
+#notification-description {
   margin-top:0;
 }
-.animation {
+#notification-animation {
     display: block;
-  float:left;
+    float:left;
     width: 32px;
     height: 32px;
     background: #0095f7;
     border-radius: 50%;
     box-shadow: 0 0 0 rgba(0,149,247,.4);
-    -webkit-animation: n_pulse 1.5s infinite;
-    animation: n_pulse 1.5s infinite;
+    animation: n_pulse_blue 1.5s infinite;
     border-radius: 50%;
     margin: 22px;
 }
 
-
-
-@keyframes n_pulse {
+@keyframes n_pulse_blue {
     0% {
           box-shadow: 0 0 0 0 rgba(0,149,247,.4);
       }
@@ -66,6 +64,30 @@ body {
     }
     100% {
         box-shadow: 0 0 0 0 rgba(0,149,247,0);
+    }
+}
+
+@keyframes n_pulse_red {
+    0% {
+          box-shadow: 0 0 0 0 rgba(247,48,0,.4);
+      }
+    70% {
+        box-shadow: 0 0 0 10px rgba(247,48,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247,48,0,0);
+    }
+}
+
+@keyframes n_pulse_yellow {
+    0% {
+          box-shadow: 0 0 0 0 rgba(247,185,0,0.4);
+      }
+    70% {
+        box-shadow: 0 0 0 10px rgba(247,185,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247,185,0,0);
     }
 }
 /* Create New Blogost */

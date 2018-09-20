@@ -1,5 +1,7 @@
 
 import Post from './Post.js';
+import Notification from './Notification.js';
+
 
 class App {
 

@@ -7,22 +7,22 @@ class Events {
     }
 
     //Get Element by ID
-    id(identifier) {
+    static id(identifier) {
         return document.getElementById(identifier);
     }
 
     //Get Elements By Classname
-    class(classname) {
+    static class(classname) {
         return document.getElementsByClassName(classname);
     }
 
     //Get Elements By Tagname
-    tag(tagname) {
+    static tag(tagname) {
         return document.getElementsByTagName(tagname);
     }
 
     //Get Form by Name
-    form(formname){
+    static form(formname){
         return document.forms[formname];
     }
 
